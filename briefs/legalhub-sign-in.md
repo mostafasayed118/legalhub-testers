@@ -21,6 +21,16 @@ This is a credential-free build of LegalHub (Flutter, `development` flavor, no
   Typing into the email field with Turkish characters is fine for a layout check,
   but do not submit the form.
 
+## Language
+
+The app defaults to English on a fresh install: `LocaleCubit` starts at `en`
+and only reads a previously saved preference, so it does not follow the device
+locale. If your screen is in English but your persona reads Arabic or Turkish,
+report that as a UX finding once (with the screenshot), then continue the test
+in English so you can still reach Sign In. If you get into the app and find
+Settings, switch the language there to your persona's language and re-check the
+Sign In screen if you still have budget.
+
 ## Goal
 
 Reach Sign In, enter the demo session, then inspect the first screen after it.
